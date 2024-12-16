@@ -192,8 +192,13 @@
 
 
 
-/* NavBar */
+/* NavBar : [TOPNAV] */
 
+.nav000{
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
 .nav0{
   background-color: #121212;
 }
@@ -213,19 +218,46 @@
   background-color: #292929;
   border-radius: 50px;
   padding: 10px;
-  margin-right: 30px;
+  margin-left: 45px;
+  margin-right: 10px;
 }
 .Home_logo:hover{
   color: #1ed760;
 }
 
+.Sicon0{
+  background-color: #1f1f1f;
+  padding: 10.2px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.Sicon1{
+  color: white;
+}
+.Sicon1:hover{
+  color: #1ed760;
+}
+
 .nav-Search_bar{
   width: 450px;
+  height: 41.5px;
   color: white;
   background-color: #1f1f1f;
   border: 2px solid #1f1f1f;
-  border-radius: 25px;
   padding: 5px;
+}
+
+.Cicon0{
+  background-color: #1f1f1f;
+  padding: 10.2px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.Cicon1{
+  color: white;
+}
+.Cicon1:hover{
+  color: #1ed760;
 }
 
 .nav_btn{
@@ -258,17 +290,20 @@
 /* Content */
 .C_main0{
   background-color: #121212;
-  height: 152.85vh;
+  height: 162.85vh;
 }
 
 .sideC-0{
   color: white;
   background-color: #1f1f1f;
   border-radius: 7px;
-  padding: 10px;
-  margin: 10px;
+  padding: 10px 10px 10px 10px;
+  margin: 0px 10px 10px 10px;
   text-align: center;
   height: 85vh;
+  position: fixed;
+  top: 65px;
+  width: 24%;
 }
 
 .mainC-0{
@@ -289,7 +324,8 @@
   background-color: #1f1f1f;
   font-size: 20px;
   font-weight: 600;
-  width: 250px;
+  /* width: 250px; */
+  padding: 3px 30px 3px 30px;
   border: 1px solid #1f1f1f;
   border-radius: 15px;
   margin-bottom: 10px;
@@ -297,7 +333,7 @@
 .C_Home_btn:hover{
   color: #1ed760;
   background-color: #1f1f1f;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .C_side_link{
@@ -313,9 +349,10 @@
 }
 
 .C_side_log0{
-  position: absolute;
-  bottom: 70px;
-  left: 105px;
+  /* position: static;
+  bottom: 80px;
+  left: 105px; */
+  margin: 150px 50px 0px 50px;
 }
 
 .C_log0{
@@ -347,5 +384,63 @@
   background-color: #1f1f1f;
   border-radius: 7px;
   padding: 30px 40px 30px 40px;
-  margin: 10px;
+  margin: 0px 10px 10px 10px;
+  position: static;
+  width: 99%;
+}
+
+
+/* DETAIL-1 */
+
+.det-p1{
+  margin-top: 15px;
+}
+.det-p1 .dp1p{
+  font-size: 80px;
+  font-weight: 900;
+}
+
+.mainC-3{
+  color: white;
+  background-color: #1f1f1f;
+  border-radius: 7px;
+  padding: 0px 40px 20px 20px;
+  margin: 0px 10px 10px 10px;
+  position: static;
+  width: 99%;
+}
+
+.artitst3btn{
+  padding: 16px;
+}
+
+.btn33o{
+  color: white;
+  background-color: #1f1f1f;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 5px 20px 5px 20px;
+}
+
+.playlogo3{
+  color: #1ed760;
+}
+
+.btn33o{
+  font-weight: 600;
+}
+.btn33o:hover{
+  color: #121212;
+  background-color: #3be477;
+}
+
+.threedotslogo{
+  color: white;
+}
+.threedotslogo:hover{
+  color: #1ed760;
+}
+
+.songlist3{
+  margin-top: 10px;
 }

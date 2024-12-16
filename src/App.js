@@ -8,6 +8,8 @@ import Notfound from './Components/Notfound';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Partists from './Components/Pages/Partists';
 import Palbums from './Components/Pages/Palbums';
+import Detail1 from './Components/Details/Detail1';
+import Detail2 from './Components/Details/Detail2';
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='*' element={<Notfound />} />
           <Route path='/partists' element={<Partists />} />
+          <Route path='/partists/:id' element={<Detail1 />} />
           <Route path='/palbums' element={<Palbums />} />
+          <Route path='/palbums/:id' element={<Detail2 />} />
           </Routes>
       </Router>
     </div>

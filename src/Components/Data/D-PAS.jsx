@@ -20,112 +20,129 @@ import img18 from '../Assets/Popular_Albums/Yeh_Jawaani_Hai_Deewani.jpg'
 
 export const PopularAlbums = [
     {
+        id : 1,
         Image : img1,
         Name : "ANIMAL",
-        Tag : "Artist"
+        Tag : "Manan Bhardwaj"
 
     },
     {
+        id : 2,
         Image : img2,
         Name : "Aaj Ki Raat",
-        Tag : "Artist"
+        Tag : "Sachin-Jigar"
 
     },
     {
+        id : 3,
         Image : img3,
         Name : "Aashiqui2",
-        Tag : "Artist"
+        Tag : "Ankit Tiwari"
 
     },
     {
+        id : 4,
         Image : img4,
         Name : "Best of Romance",
-        Tag : "Atif Aslam & Pritam"
+        Tag : "Atif Aslam, Pritam"
 
     },
     {
+        id : 5,
         Image : img5,
         Name : "Ek Tha Raja",
-        Tag : "Artist"
+        Tag : "Badshah"
 
     },
     {
+        id : 6,
         Image : img6,
         Name : "G.O.A.T.",
-        Tag : "Artist"
+        Tag : "Diljit Dosanjh"
 
     },
     {
+        id : 7,
         Image : img7,
         Name : "GLORY",
-        Tag : "Artist"
+        Tag : "Yo Yo Honey Singh"
 
     },
     {
+        id : 8,
         Image : img8,
         Name : "Hamari Adhuri Kahani",
-        Tag : "Artist"
+        Tag : "Sachet-Parampara"
 
     },
     {
+        id : 9,
         Image : img9,
         Name : "Jab We Met",
-        Tag : "Artist"
+        Tag : "Various"
 
     },
     {
+        id : 10,
         Image : img10,
         Name : "Kabir Singh",
-        Tag : "Artist"
+        Tag : "Arijit Singh"
 
     },
     {
+        id : 11,
         Image : img11,
         Name : "Making Memories",
-        Tag : "Artist"
+        Tag : "Karan Aujla"
 
     },
     {
+        id : 12,
         Image : img12,
         Name : "Moosetape",
-        Tag : "Artist"
+        Tag : "Sidhu Moose Wala"
 
     },
     {
+        id : 13,
         Image : img13,
         Name : "Patandar",
-        Tag : "Artist"
+        Tag : "Arjan Dhillon"
 
     },
     {
+        id : 14,
         Image : img14,
         Name : "Raanjhan",
-        Tag : "Artist"
+        Tag : "Kausar Munir"
 
     },
     {
+        id : 15,
         Image : img15,
         Name : "Rockstar",
-        Tag : "Artist"
+        Tag : "Irshad Kamil"
 
     },
-
     {
+        id : 16,
         Image : img16,
         Name : "Still Rollin",
-        Tag : "Artist"
+        Tag : "Shubh"
 
     },
     {
+        id : 17,
         Image : img17,
         Name : "Ultimate Love Songs",
         Tag : "Arijit Singh"
 
     },
     {
+        id : 18,
         Image : img18,
         Name : "Yeh Jawaani Hai Deewani",
-        Tag : "Artist"
+        Tag : "Pritam"
 
     },
 ]

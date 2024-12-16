@@ -1,13 +1,15 @@
 import React from 'react'
-import { PopularArtists } from '../Data/D-PA'
+import { PopularAlbums } from '../Data/D-PAS'
+import { useParams } from 'react-router-dom'
+import { Row, Col} from 'react-bootstrap' 
 import Topnav from '../Modules/Topnav'
 import Content from '../Modules/Content'
-import { Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
-function Partists() {
+function Detail2() {
+    let { id } = useParams()
+    let albumsdet = PopularAlbums.find((item) => item.id == id)
   return (
-
     <div className='dash' >
 
       <Topnav />
@@ -25,27 +27,19 @@ function Partists() {
               <div className='mainC-1 '>
 
                 <div className='MPA0'>
-                  <h4>Popular Artists</h4>
-                  <Link className='MPA-show0' to='/dashboard'>Back</Link>
+                  <h4>Popular Albums</h4>
+                  <Link className='MPA-show0' to='/palbums'>Back</Link>
                 </div>
 
                 <div className='artists2 d-flex justify-content-between flex-wrap'>
-                  {
-                    PopularArtists.map((a)=>{
-                    return(
-                      <Link className='artistsclick1' to={`/partists/${a.id}`} style={{color:'white', textDecoration:'none'}}>
                       <div>
-                        <img src={a.Image} alt="" className='my-3' style={{width:'140px', height:'140px', borderRadius:'50%'}} />
+                        <img src={albumsdet.Image} alt="" className='my-3' style={{width:'140px', height:'140px', borderRadius:'8px'}} />
                         <p>
-                          {a.Name}
+                          {albumsdet.Name}
                           <br />
-                          {a.Tag}
+                          {albumsdet.Tag}
                         </p>
                       </div>
-                      </Link>
-                    )
-                    })
-                  }
                 </div>
                 
               </div>
@@ -56,10 +50,7 @@ function Partists() {
       </div>
 
     </div>
-
-    
   )
 }
 
-export default Partists
-
+export default Detail2

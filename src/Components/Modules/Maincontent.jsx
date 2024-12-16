@@ -9,9 +9,9 @@ function Maincontent() {
   return (
     <div className='mainC-1'>
 
-      <div>
+      <div className='mainC-2'>
       <div className='MPA0'>
-        <h4>Popular Artists</h4>
+        <h3>Popular Artists</h3>
         <Link className='MPA-show0' to='/partists'>Show All</Link>
       </div>
 
@@ -19,14 +19,16 @@ function Maincontent() {
         {
           PAdisplay.map((a)=>{
             return(
+              <Link className='artistsclick1' to={`/partists/${a.id}`} style={{color:'white', textDecoration:'none'}}>
               <div>
-                <img src={a.Image} alt="" className='my-3' style={{width:'165px', height:'165px', borderRadius:'50%'}} />
+                <img src={a.Image} alt="" className='my-3' style={{width:'140px', height:'140px', borderRadius:'50%'}} />
                 <p>
                   {a.Name}
                   <br />
                   {a.Tag}
                 </p>
               </div>
+              </Link>
             )
           })
         }
@@ -35,7 +37,7 @@ function Maincontent() {
 
       <div className='my-5'>
       <div className='MPA0'>
-        <h4>Popular Albums</h4>
+        <h3>Popular Albums</h3>
         <Link className='MPA-show0' to='/palbums'>Show All</Link>
       </div>
 
@@ -43,14 +45,16 @@ function Maincontent() {
         {
           PASdisplay.map((a)=>{
             return(
+              <Link className='albumsclick1' to={`/palbums/${a.id}`} style={{color:'white', textDecoration:'none'}}>
               <div>
-                <img src={a.Image} alt="" className='my-3' style={{width:'165px', height:'165px', borderRadius:'8px'}} />
+                <img src={a.Image} alt="" className='my-3' style={{width:'140px', height:'140px', borderRadius:'8px'}} />
                 <p>
                   {a.Name}
                   <br />
                   {a.Tag}
                 </p>
               </div>
+              </Link>
             )
           })
         }

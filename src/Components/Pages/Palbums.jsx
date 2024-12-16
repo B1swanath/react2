@@ -33,14 +33,16 @@ function Palbums() {
                   {
                     PopularAlbums.map((a)=>{
                     return(
+                      <Link className='albumsclick1' to={`/palbums/${a.id}`} style={{color:'white', textDecoration:'none'}}>
                       <div>
-                        <img src={a.Image} alt="" className='my-3' style={{width:'165px', height:'165px', borderRadius:'8px'}} />
+                        <img src={a.Image} alt="" className='my-3' style={{width:'140px', height:'140px', borderRadius:'8px'}} />
                         <p>
                           {a.Name}
                           <br />
                           {a.Tag}
                         </p>
                       </div>
+                      </Link>
                     )
                     })
                   }
