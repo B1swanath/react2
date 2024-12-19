@@ -389,6 +389,22 @@
   width: 99%;
 }
 
+.artistsclick1{
+  padding: 19px;
+}
+.artistsclick1:hover{
+  background-color: #292929;
+  border-radius: 10px;
+}
+
+.albumsclick1{
+  padding: 15px;
+}
+.albumsclick1:hover{
+  background-color: #292929;
+  border-radius: 10px;
+}
+
 
 /* DETAIL-1 */
 

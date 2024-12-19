@@ -29,7 +29,7 @@ function Partists() {
                   <Link className='MPA-show0' to='/dashboard'>Back</Link>
                 </div>
 
-                <div className='artists2 d-flex justify-content-between flex-wrap'>
+                <div className='artists2 d-flex flex-wrap'>
                   {
                     PopularArtists.map((a)=>{
                     return(

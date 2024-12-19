@@ -20,7 +20,7 @@ function Maincontent() {
           PAdisplay.map((a)=>{
             return(
               <Link className='artistsclick1' to={`/partists/${a.id}`} style={{color:'white', textDecoration:'none'}}>
-              <div>
+              <div className='hovermain'>
                 <img src={a.Image} alt="" className='my-3' style={{width:'140px', height:'140px', borderRadius:'50%'}} />
                 <p>
                   {a.Name}

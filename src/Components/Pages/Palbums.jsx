@@ -37,7 +37,7 @@ function Palbums() {
                       <div>
                         <img src={a.Image} alt="" className='my-3' style={{width:'140px', height:'140px', borderRadius:'8px'}} />
                         <p>
-                          {a.Name}
+                          {a.Name.slice(0,15)}
                           <br />
                           {a.Tag}
                         </p>
